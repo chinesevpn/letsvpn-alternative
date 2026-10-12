@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>快连不能用了怎么办？2026 快连（LetsVPN）替代与迁移手册</title>
+<meta name="description" content="快连（LetsVPN）2026 年 4 月退出中国大陆，现在还能用吗？剩下的时长怎么退款？换什么替代？本手册整理快连退出时间线、官方退款步骤、替代品验货表、搬家七步和避坑清单。">
+<meta name="keywords" content="快连替代,快连不能用了,快连VPN,LetsVPN,快连退款,快连退出中国,快连连不上,快连还能用吗">
+<link rel="canonical" href="https://chinesevpn.github.io/letsvpn-alternative/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://chinesevpn.github.io/letsvpn-alternative/">
+<meta property="og:title" content="快连不能用了怎么办？2026 快连替代与迁移手册">
+<meta property="og:description" content="快连退出时间线、官方退款步骤、替代品验货表、搬家七步、避坑清单。">
+<meta property="og:locale" content="zh_CN">
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#f7f5fb;--card:#fff;--ink:#27222f;--muted:#655d70;--line:#e4dcef;--accent:#6d28d9;--accent-soft:#f1eafd;--bad:#c92a2a}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;font-size:16px}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+header{padding:48px 0 30px;border-bottom:3px solid var(--accent)}
+header h1{margin:0 0 12px;font-size:28px;line-height:1.4;letter-spacing:.5px}
+header p{margin:0;color:var(--muted);font-size:15px}
+.status{display:inline-block;margin-top:16px;background:var(--accent-soft);color:var(--accent);border:1px solid #dccbfa;border-radius:999px;padding:4px 14px;font-size:13px;font-weight:600}
+.meta{margin-top:10px;font-size:13px;color:var(--muted)}
+a{color:var(--accent)}
+h2{font-size:21px;margin:44px 0 14px;line-height:1.4}
+h2::before{content:"";display:inline-block;width:10px;height:10px;background:var(--accent);border-radius:50%;margin-right:10px;vertical-align:middle}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 20px;margin:26px 0;font-size:15px}
+.toc ol{margin:6px 0 0;padding-left:20px}
+.toc li{margin:3px 0}
+.sum{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:6px 20px;margin:16px 0}
+.sum li{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px;background:var(--card);display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;min-width:120px}
+th{background:#ece4f8}
+td:first-child{white-space:nowrap;font-weight:600}
+ol.steps{counter-reset:s;list-style:none;padding-left:0}
+ol.steps li{counter-increment:s;position:relative;padding-left:42px;margin:14px 0}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;line-height:28px;font-weight:700;font-size:14px}
+.guess{background:#fffbea;border:1px dashed #e0c36a;border-radius:10px;padding:12px 18px;margin:14px 0}
+.guess b{color:#8a6100}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:16px 0}
+.dont li{margin:8px 0}
+.dont li strong{color:var(--bad)}
+.note{color:var(--muted);font-size:14px}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 16px;margin:10px 0}
+summary{font-weight:600;cursor:pointer;padding:6px 0}
+details p{margin:4px 0 10px;color:var(--muted)}
+footer{margin-top:48px;padding:24px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media (max-width:600px){header h1{font-size:23px}td:first-child{white-space:normal}}
+</style>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Article",
+"headline":"快连不能用了怎么办？2026 快连（LetsVPN）替代与迁移手册",
+"inLanguage":"zh-CN",
+"datePublished":"2026-10-12",
+"dateModified":"2026-10-12",
+"author":{"@type":"Person","name":"科学上网手册"},
+"description":"快连（LetsVPN）退出中国大陆后的退款步骤、替代品选择标准、搬家清单与避坑提醒。"
+}
+</script>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+{"@type":"Question","name":"快连还会回来吗？","acceptedAnswer":{"@type":"Answer","text":"不知道。快连官方 2026 年 5 月 15 日的道歉信说已经无法继续面向中国大陆提供 VPN 服务，之后没有新的恢复公告。与其等，不如先换。"}},
+{"@type":"Question","name":"快连的退款多久能到？","acceptedAnswer":{"@type":"Answer","text":"没有统一时间。简单订单处理得快，复杂订单慢，有用户反映等了十多个工作日。支付宝、微信付的，因为大陆付款通道已关闭，会更慢一些。退款只走客户端里的官方入口。"}},
+{"@type":"Question","name":"快连在国外还能用吗？","acceptedAnswer":{"@type":"Answer","text":"能。快连 2026 年 5 月 8 日起恢复了全球运营，中国大陆以外的地区可以正常使用。"}},
+{"@type":"Question","name":"哪个替代品用起来最像快连？","acceptedAnswer":{"@type":"Answer","text":"如果在意一键连接、支付宝微信能付、手机电脑都能用，就在国内一键式工具里挑，用快连当年的六个优点逐条验：一键连接、国内支付、免费试用、全平台客户端、晚高峰稳定、智能分流。"}},
+{"@type":"Question","name":"快连都倒了，别的翻墙工具会不会也倒？","acceptedAnswer":{"@type":"Answer","text":"会，这一行每个月都有。所以要按周、按月买，不要年付，并且留一个备用工具。"}}
+]
+}
+</script>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<h1>快连不能用了怎么办？<br>2026 快连（LetsVPN）替代与迁移手册</h1>
+<p>快连停掉大陆业务那阵子，我身边好几个人都是第一次自己挑翻墙工具，问的问题几乎一模一样。这份手册只讲一件事：从快连搬走。退款怎么弄、换什么、怎么换才不再被坑一次。</p>
+<span class="status">快连在中国大陆：仍未恢复</span>
+<div class="meta">最后核实：2026 年 10 月 12 日 · 长期更新，欢迎收藏 ⭐ · <a href="https://github.com/chinesevpn/letsvpn-alternative">GitHub 版</a></div>
+</div>
+</header>
+
+<main class="wrap">
+
+<nav class="toc">
+<strong>目录</strong>
+<ol>
+<li><a href="#tldr">先说结论</a></li>
+<li><a href="#timeline">快连退出的经过</a></li>
+<li><a href="#refund">账号里剩下的钱和时长怎么办</a></li>
+<li><a href="#why">快连为什么扛不住了</a></li>
+<li><a href="#pick">选替代品：拿快连当年的优点当尺子</a></li>
+<li><a href="#options">几类替代方案，各自的坑</a></li>
+<li><a href="#move">搬家清单：换工具的七步</a></li>
+<li><a href="#mine">我自己换成了什么</a></li>
+<li><a href="#dont">这些别碰</a></li>
+<li><a href="#faq">常见问题 FAQ</a></li>
+</ol>
+</nav>
+
+<section id="tldr">
+<h2>先说结论</h2>
+<ul class="sum">
+<li><strong>在中国大陆，快连已经不能指望了。</strong>它 2026 年 4 月 28 日宣布终止面向中国大陆的业务，5 月 8 日恢复的是全球运营，官方原话是「无法保证中国大陆地区的服务状态」。到 10 月中旬，它的官方博客没有再发过恢复大陆服务的公告。</li>
+<li><strong>连不上不是你的设置问题</strong>，卸载重装、换网络都没用，别再花时间折腾。</li>
+<li><strong>还没退款的，走客户端里的官方入口</strong>，别找任何「代退款」。</li>
+<li><strong>换工具别急着年付。</strong>快连这么大的牌子都能说停就停，这一行里没有谁能保证一年后还在。</li>
+</ul>
+</section>
+
+<section id="timeline">
+<h2>快连退出的经过</h2>
+<table>
+<thead><tr><th>时间</th><th>发生了什么</th></tr></thead>
+<tbody>
+<tr><td>4 月 8 日前后</td><td>大陆用户开始成片连不上。快连之后的退款和补偿都以这一天为起点</td></tr>
+<tr><td>4 月 28 日</td><td>发布《致快连（LetsVPN）用户》，宣布终止面向中国大陆的业务运营。理由是过去约 20 天技术团队几乎每小时都在调整，仍然解决不了连接问题</td></tr>
+<tr><td>5 月 1 日</td><td>发布账户时长冻结、自助退款和后续计费的说明</td></tr>
+<tr><td>5 月 8 日</td><td>宣布从多伦多时间 5 月 8 日 24 点起恢复全球标准运营，同时说明无法保证中国大陆的服务状态</td></tr>
+<tr><td>5 月 12 日</td><td>冻结补偿截止。4 月 8 日到 5 月 8 日之间的已购时长，没主动冻结的由系统统一补发</td></tr>
+<tr><td>5 月 15 日</td><td>CEO 发道歉信，明确快连已经无法继续面向中国大陆提供 VPN 服务，建议大陆用户尽快按退款流程处理账户，并表示会改掉「永远能连上」这句口号</td></tr>
+</tbody>
+</table>
+<p>快连之前对外一直说「我们绝不跑路」。从后来的做法看，它确实没有卷钱消失，退款和补偿都有安排。但对用户来说结果是一样的：花钱买的时长，在大陆用不了了。</p>
+</section>
+
+<section id="refund">
+<h2>账号里剩下的钱和时长怎么办</h2>
+<p>按快连官方几次公告的说法，整理成能直接照做的步骤：</p>
+<ol class="steps">
+<li><strong>在客户端里找官方的退款入口提交申请。</strong>官方说过退款以客户端内的入口为准，不需要也不应该通过任何第三方。</li>
+<li><strong>提交后在同一个入口看进度。</strong>复杂的订单处理得慢，有人等了十多个工作日，别反复提交。</li>
+<li><strong>心里先有个数：退款不是按剩余天数简单折算。</strong>CEO 道歉信里说，赠送的时长不按付费时长退，长期套餐按实际使用、以套餐价格重新计算。买了年卡用了几个月的，退回来的钱可能比你想的少。</li>
+<li><strong>大陆的支付宝、微信付款通道已经关闭，但退款还在处理</strong>，原路退回需要更多时间。</li>
+<li><strong>5 月 12 日的冻结补偿已经结束</strong>，现在按标准规则计算。</li>
+</ol>
+<p class="note">如果你人在海外、或者经常出境，快连在境外还能用，剩下的时长可以留着出国用，不一定非退不可。</p>
+</section>
+
+<section id="why">
+<h2>快连为什么扛不住了</h2>
+<p>官方给的原因只有一句：连接问题持续 20 天，解决不了。下面是我的理解：</p>
+<div class="guess">
+<p><b>以下都是推测，不是快连说的。</b></p>
+<p><strong>时间点很巧。</strong>快连出事的同一个月，正好是今年那轮「行政拉闸」开始的时候：运营商整改跨境专线、机房层面拔线，一批机场在四五月接连倒掉。墙在技术上升级是一回事，从机房、线路这一层直接动手是另一回事，后者靠技术很难躲。</p>
+<p><strong>用户越多，目标越大。</strong>有评论认为快连的协议特征被识别了，这个说法我核实不了。但一个几千万用户都在用的工具，本来就是最显眼的靶子，这一点不用核实也能想明白。</p>
+</div>
+<p>这件事对普通人的教训其实就两条：<strong>别把所有鸡蛋放在一个工具里，别一次付太久的钱。</strong></p>
+</section>
+
+<section id="pick">
+<h2>选替代品：拿快连当年的优点当尺子</h2>
+<p>快连当年好用，好在哪几点很清楚。找替代品，就照着这几点一条条验：</p>
+<table>
+<thead><tr><th>快连当年的优点</th><th>替代品要看什么</th><th>怎么验</th></tr></thead>
+<tbody>
+<tr><td>打开就连，不用配置</td><td>有没有正规客户端，是不是一键连接</td><td>下载安装，从打开到连上数一下要几步</td></tr>
+<tr><td>支付宝、微信能付</td><td>支不支持国内常用支付方式</td><td>看购买页，别等到付款那一步才发现付不了</td></tr>
+<tr><td>有免费时长先试</td><td>有没有免费试用，从什么时候开始计时</td><td>注册看看送多少、怎么算</td></tr>
+<tr><td>手机电脑都能用</td><td>各平台客户端是否齐全</td><td>把你常用的设备都装上试一遍</td></tr>
+<tr><td>晚上也稳</td><td>晚高峰能不能用</td><td>晚上 8 点到 11 点专门测，白天测的不算数</td></tr>
+<tr><td>不用来回开关</td><td>有没有智能分流，开着能不能正常用国内 App</td><td>开着 VPN 刷淘宝、用微信支付试试</td></tr>
+</tbody>
+</table>
+<p>六条里缺两条以上的，对习惯了快连的人来说，用起来会很难受。</p>
+</section>
+
+<section id="options">
+<h2>几类替代方案，各自的坑</h2>
+<div class="box">
+<p><strong>国际大牌（ExpressVPN、NordVPN 这类）</strong>：名气大，但在墙内反而不稳，大多只收信用卡或 PayPal，客服也是英文。快连用户最在意的「省心」，它们给不了。</p>
+<p><strong>机场订阅（Clash、小火箭这类）</strong>：好机场速度很快，但要自己装客户端、导订阅、看懂规则，这跟快连完全是两种用法。而且机场跑路是常态，今年 4 月那一波就倒了一串。</p>
+<p><strong>别的国内一键式工具</strong>：用法最接近快连，是大多数快连用户最后的去处。缺点是质量差别很大，有的就是换了个皮，敏感期一过就没了。</p>
+<p><strong>自己搭</strong>：懂技术的可以，但要自己买服务器、自己维护，IP 被封了也得自己换。不适合只想「点一下就能用」的人。</p>
+</div>
+</section>
+
+<section id="move">
+<h2>搬家清单：换工具的七步</h2>
+<ol class="steps">
+<li><strong>先把快连的退款申请提交了</strong>，不管最后退多少。</li>
+<li><strong>想清楚你主要拿它干嘛</strong>：看 YouTube、用 ChatGPT、外贸、刷 Instagram，需求不同，挑法不同。用 AI 工具的人还要多看一条：出口 IP 干不干净，见<a href="https://chinesevpn.github.io/chatgpt-vpn-guide/">这份 AI 手册</a>。</li>
+<li><strong>挑两三个有免费试用的，同时试。</strong></li>
+<li><strong>试三天，至少包含一个晚高峰</strong>，把你天天用的几个 App 和网站都过一遍。</li>
+<li><strong>只买周卡或月卡。</strong>等用满一两个月、经历过一次敏感期，再考虑长一点的套餐。</li>
+<li><strong>手机、电脑都装上、都登录好。</strong>断了再去找安装包，官网可能已经打不开。</li>
+<li><strong>留一个备用。</strong>主力挂了能顶上，哪怕只是一个有免费额度的。</li>
+</ol>
+</section>
+
+<section id="mine">
+<h2>我自己换成了什么</h2>
+<div class="box">
+<p>我现在主力用的是 <a href="https://hailianvpn.com/api/aff/click/HLFUWEAR" rel="nofollow">海连 VPN</a>。选它，主要是用法跟快连最像：</p>
+<ul>
+<li>一键连接，不用任何配置；Windows、Mac、iPhone、安卓都有客户端；</li>
+<li>支付宝、微信都能付；</li>
+<li>周卡 15 元起，月卡 35 元，有效期内不限流量、不限速，我自己一直按周卡、月卡续，不买年卡；</li>
+<li>注册送免费体验，从第一次连接才开始计时；每天在 App 里签到还能领免费时长；</li>
+<li>智能分流，开着它国内网站和 App 照常用；掉线会自动切到别的节点；</li>
+<li>有真人客服。</li>
+</ul>
+<p>缺点也说清楚：冷门地区（南美、非洲）节点少，全球 100 台服务器的规模比不上国际大厂；敏感期最严的那几天它一样会波动，只是自动切线路之后恢复得比较快。另外它也是一家公司，我不敢保证它永远在，所以上面「别年付」那条，对它一样适用。</p>
+</div>
+</section>
+
+<section id="dont">
+<h2>这些别碰</h2>
+<ul class="dont">
+<li><strong>自称「快连复活版」「快连内部版」的 App 或安装包。</strong>快连在大陆没有恢复，官方也没发过什么特殊版本，这类东西不是蹭名字的野鸡工具，就是来骗钱的。</li>
+<li><strong>「代退款」「加急退款」。</strong>官方说过退款只走客户端里的入口，任何要你交账号密码、交手续费的，都是骗局。</li>
+<li><strong>淘宝、群里卖的快连续费或二手账号。</strong>大陆都用不了，买了也是白买。</li>
+<li><strong>为了省钱一次买一年的新工具。</strong>理由见上面。</li>
+</ul>
+</section>
+
+<section id="faq">
+<h2>常见问题 FAQ</h2>
+<details><summary>快连还会回来吗？</summary>
+<p>不知道。官方 5 月 15 日的道歉信说的是「已经无法继续面向中国大陆提供 VPN 服务」，到现在也没有新的公告。与其等，不如先换。</p></details>
+<details><summary>快连的退款多久能到？</summary>
+<p>没有统一时间。简单订单处理得快，复杂订单慢，有用户反映等了十多个工作日。支付宝、微信付的，因为大陆付款通道关了，会更慢一些。</p></details>
+<details><summary>快连在国外还能用吗？</summary>
+<p>能。快连 5 月 8 日起恢复了全球运营，大陆以外的地区可以正常使用。</p></details>
+<details><summary>哪个替代品用起来最像快连？</summary>
+<p>看你在意什么。如果在意的是「一键连接、支付宝能付、手机电脑都能用」，那就在国内一键式工具里挑，用上面那张表去验。我自己用的是海连，理由和缺点上面都写了。</p></details>
+<details><summary>快连都倒了，别的工具会不会也倒？</summary>
+<p>会，而且这一行每个月都有。所以才要按周、按月买，再留一个备用。这是这份手册最想让你记住的一句话。</p></details>
+</section>
+
+</main>
+
+<footer class="wrap">
+<p>本手册长期更新，快连有新公告会第一时间补上。欢迎到 <a href="https://github.com/chinesevpn/letsvpn-alternative">GitHub 仓库</a>提 Issue 交流。</p>
+<p>更多手册：<a href="https://chinesevpn.github.io/">← 科学上网手册合集</a> · <a href="https://chinesevpn.github.io/china-vpn-not-working/">VPN 连不上？敏感期自救手册</a> · <a href="https://chinesevpn.github.io/chatgpt-vpn-guide/">在中国用 ChatGPT / Claude / Gemini</a></p>
+<p>参考：快连官方公告（<a href="https://letsvpn.world/blogs" rel="nofollow">4 月 28 日</a>、<a href="https://letsvpn.world/blog/f20bkd?hl=zh" rel="nofollow">5 月 8 日</a>、<a href="https://letsvpn.world/blog/h20kxb" rel="nofollow">5 月 15 日</a>）· <a href="https://www.epochtimes.com/gb/26/4/29/n14752429.htm" rel="nofollow">大纪元报道（4 月 29 日）</a> · <a href="https://www.ermao.net/en/blog/j0qbrzgj/" rel="nofollow">二毛博客整理</a></p>
+<p style="opacity:.8">*文中含推广链接，但每条建议都基于真实使用；所有方案的缺点如实写出。本手册与快连（LetsVPN）官方无任何关系。</p>
+</footer>
+
+</body>
+</html>
